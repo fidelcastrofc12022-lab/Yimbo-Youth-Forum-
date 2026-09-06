@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yimbo Youth Forum — Unity • Empowerment • Development</title>
-<link rel="icon" href="assets/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -63,7 +62,7 @@
     display:flex; align-items:center; justify-content:space-between;
     padding:18px 28px; max-width:1120px; margin:0 auto;
   }
-  .brand{display:flex; flex-direction:row; align-items:center; gap:12px; color:var(--cream);}
+  .brand{display:flex; flex-direction:row; align-items:center; gap:0; color:var(--cream);}
   .brand strong{font-family:'Poppins',sans-serif; font-size:1.28rem; font-weight:700; letter-spacing:0.01em;}
   .brand span{font-size:0.72rem; color:var(--gold-soft); margin-top:2px;}
   .navlinks{display:flex; gap:28px; align-items:center;}
@@ -182,7 +181,11 @@
   .lead-grid{display:grid; grid-template-columns:1fr; gap:28px; margin-bottom:52px;}
   @media (min-width:640px){ .lead-grid{grid-template-columns:1fr 1fr;} }
   @media (min-width:960px){ .lead-grid{grid-template-columns:1fr 1fr 1fr;} }
-  .lead-card{display:flex; gap:16px; align-items:flex-start;}
+  .lead-card{display:block; background:rgba(255,255,255,0.025); border:1px solid var(--line); border-radius:16px; overflow:hidden; transition:transform .2s ease, border-color .2s ease; }
+  .lead-card:hover{transform:translateY(-3px); border-color:rgba(59,130,246,0.45);}
+  .lead-card-content{padding:18px 18px 20px;}
+  .lead-photo{width:100%; height:230px; border-radius:0; object-fit:cover; object-position:center; border:0; display:block;}
+  .lead-photo-ph{width:100%; height:230px; border-radius:0; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-size:2.2rem; color:var(--cream); background:linear-gradient(135deg,#17233a,#263b5e)!important;}
   .lead-photo{
     width:76px; height:76px; border-radius:50%; object-fit:cover; flex-shrink:0;
     border:2px solid rgba(59,130,246,0.35);
@@ -335,7 +338,6 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <img src="assets/logo.jpg" alt="Yimbo Youth Forum logo" style="width:44px; height:44px; border-radius:50%; object-fit:cover;">
       <div>
         <strong>Yimbo Youth Forum</strong>
         <span>Unity • Empowerment • Development</span>
@@ -451,7 +453,7 @@
 
       <div class="lead-card">
         <img class="lead-photo" src="assets/fidel.jpg" alt="Fidel Castro">
-        <div>
+        <div class="lead-card-content">
           <div class="lead-name">Fidel Castro</div>
           <div class="lead-role">Chairperson</div>
           <p class="lead-bio">Provides visionary strategic direction, institutional governance, and high-level representation. Champions programs expanding education, entrepreneurship, and leadership for youth across the region.</p>
@@ -459,7 +461,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">CO</div>
+        <div class="lead-photo-ph" src="https://sportal365images.com/process/smp-images-production/pulse.ng/13082025/bf2b7142-4707-4e4f-a65f-01d59241713f.jpg?operations=fit%28770%3A%29" alt="African youth leadership workshop" class="lead-photo">
         <div>
           <div class="lead-name">Catherine Owino</div>
           <div class="lead-role">Vice Chairperson</div>
@@ -468,7 +470,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">MA</div>
+        <div class="lead-photo-ph" src="https://www.wearetech.africa/media/k2/items/cache/fdc80e49667c7ce8c10c4aa4662e831e_XL.jpg" alt="African youth technology training" class="lead-photo">
         <div>
           <div class="lead-name">Mike Arsen</div>
           <div class="lead-role">Secretary General</div>
@@ -478,7 +480,7 @@
 
       <div class="lead-card">
         <img class="lead-photo" src="assets/wellington.jpg" alt="Wellingtone Onyango">
-        <div>
+        <div class="lead-card-content">
           <div class="lead-name">Wellingtone Onyango</div>
           <div class="lead-role">Executive Secretary</div>
           <p class="lead-bio">Streamlines day-to-day administrative workflows, manages schedules, and facilitates operational communication between executive officers, regional leaders, and stakeholders.</p>
@@ -487,7 +489,7 @@
 
       <div class="lead-card">
         <img class="lead-photo" src="assets/elisha.jpg" alt="Elisha Owino">
-        <div>
+        <div class="lead-card-content">
           <div class="lead-name">Elisha Owino</div>
           <div class="lead-role">Director of Finance & Treasury</div>
           <p class="lead-bio">Oversees financial health, budgeting, resource mobilization, and transparent accounting practices for organizational funds and community projects.</p>
@@ -495,7 +497,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:#4C6580;">OS</div>
+        <div class="lead-photo-ph" src="https://pbs.twimg.com/media/FLZAXeCWQAAYRlr.jpg" alt="African youth community volunteering" class="lead-photo">
         <div>
           <div class="lead-name">Ohindo SuperB</div>
           <div class="lead-role">Director of Logistics & Mobilization</div>
@@ -504,7 +506,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--gold);">EM</div>
+        <div class="lead-photo-ph" src="https://www.wearetech.africa/media/k2/items/cache/fdc80e49667c7ce8c10c4aa4662e831e_XL.jpg" alt="African youth technology training" class="lead-photo">
         <div>
           <div class="lead-name">Emmanuel Msitwa</div>
           <div class="lead-role">Director of ICT, Media & PR</div>
@@ -513,7 +515,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">BB</div>
+        <div class="lead-photo-ph" src="https://sportal365images.com/process/smp-images-production/pulse.ng/13082025/bf2b7142-4707-4e4f-a65f-01d59241713f.jpg?operations=fit%28770%3A%29" alt="African youth leadership workshop" class="lead-photo">
         <div>
           <div class="lead-name">Billy Billex</div>
           <div class="lead-role">Chief Project Coordinator</div>
@@ -523,7 +525,7 @@
 
       <div class="lead-card">
         <img class="lead-photo" src="assets/aloyce.jpg" alt="Aloyce Mugah">
-        <div>
+        <div class="lead-card-content">
           <div class="lead-name">Aloyce Mugah</div>
           <div class="lead-role">Director of International & Diaspora Affairs</div>
           <p class="lead-bio">Builds external networks, connects with international partners, and engages the Yimbo diaspora community to channel support and mentorship back home.</p>
@@ -536,14 +538,14 @@
     <div class="lead-grid">
       <div class="lead-card">
         <img class="lead-photo" src="assets/stakus.jpg" alt="Stakus Nuani">
-        <div>
+        <div class="lead-card-content">
           <div class="lead-name">Stakus Nuani</div>
           <div class="lead-role">Regional Lead — East</div>
           <p class="lead-bio">Serves as the primary liaison between grassroots members in East wards and the central executive body, ensuring equitable distribution of opportunities.</p>
         </div>
       </div>
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:#4C6580;">ON</div>
+        <div class="lead-photo-ph" src="https://pbs.twimg.com/media/FLZAXeCWQAAYRlr.jpg" alt="African youth community volunteering" class="lead-photo">
         <div>
           <div class="lead-name">Oliver Ndwala</div>
           <div class="lead-role">Regional Lead — West</div>
@@ -555,7 +557,7 @@
     <p class="lead-group-title">Advisory board</p>
     <div class="lead-grid">
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--gold-soft); color:var(--forest-deep);">SO</div>
+        <div class="lead-photo-ph" src="https://sportal365images.com/process/smp-images-production/pulse.ng/13082025/bf2b7142-4707-4e4f-a65f-01d59241713f.jpg?operations=fit%28770%3A%29" alt="African youth leadership workshop" class="lead-photo">
         <div>
           <div class="lead-name">Samson Ojwang</div>
           <div class="lead-role">Senior Advisory Board</div>
