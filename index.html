@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yimbo Youth Forum — Unity • Empowerment • Development</title>
+<link rel="icon" href="assets/logo.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -174,16 +175,10 @@
   .lead-grid{display:grid; grid-template-columns:1fr; gap:28px; margin-bottom:52px;}
   @media (min-width:640px){ .lead-grid{grid-template-columns:1fr 1fr;} }
   @media (min-width:960px){ .lead-grid{grid-template-columns:1fr 1fr 1fr;} }
-  .lead-card{display:flex; gap:16px; align-items:flex-start;}
-  .lead-photo{
-    width:76px; height:76px; border-radius:50%; object-fit:cover; flex-shrink:0;
-    border:2px solid rgba(59,130,246,0.35);
-  }
-  .lead-photo-ph{
-    width:76px; height:76px; border-radius:50%; flex-shrink:0;
-    display:flex; align-items:center; justify-content:center;
-    font-family:'Poppins',sans-serif; font-size:1.3rem; color:var(--cream);
-  }
+  .lead-card{display:flex; flex-direction:column; gap:14px; align-items:stretch; border:1px solid var(--line); padding:16px; border-radius:14px; background:rgba(255,255,255,0.02);}
+  .lead-photo{width:100%; height:230px; border-radius:12px; object-fit:cover; flex-shrink:0; border:2px solid rgba(59,130,246,0.35); background:var(--forest-deep);}
+  .lead-photo-ph{width:100%; height:230px; border-radius:12px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-size:1.3rem; color:var(--cream); background:var(--forest-deep); border:2px solid rgba(59,130,246,0.25);}
+
   .lead-name{font-size:1.03rem; color:var(--ink); margin-bottom:2px;}
   .lead-role{font-size:0.85rem; color:var(--clay); font-weight:600; margin-bottom:8px;}
   .lead-bio{font-size:0.88rem; color:rgba(234,240,251,0.68); line-height:1.55;}
@@ -314,6 +309,7 @@
 <header>
   <div class="nav">
     <div class="brand">
+      <img src="assets/logo.jpg" alt="Yimbo Youth Forum logo" style="width:44px;height:44px;border-radius:50%;object-fit:cover;">
       <div>
         <strong>Yimbo Youth Forum</strong>
         <span>Unity • Empowerment • Development</span>
@@ -419,7 +415,7 @@
     <div class="lead-grid">
 
       <div class="lead-card">
-        <div>
+        <img class="lead-photo" src="assets/profiles/fidel.jpg" alt="Fidel Castro"><div>
           <div class="lead-name">Fidel Castro</div>
           <div class="lead-role">Chairperson</div>
           <p class="lead-bio">Provides visionary strategic direction, institutional governance, and high-level representation. Champions programs expanding education, entrepreneurship, and leadership for youth across the region.</p>
@@ -427,8 +423,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">CO</div>
-        <div>
+        <img class="lead-photo" src="assets/profiles/catherine-owino.jpg" alt="Catherine Owino"><div>
           <div class="lead-name">Catherine Owino</div>
           <div class="lead-role">Vice Chairperson</div>
           <p class="lead-bio">Supports the executive office by overseeing internal committee harmonization, program implementation oversight, and stakeholder relations with a focus on inclusivity and gender equity.</p>
@@ -436,8 +431,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">MA</div>
-        <div>
+        <img class="lead-photo" src="assets/profiles/mike-arsen.jpg" alt="Mike Arsen"><div>
           <div class="lead-name">Mike Arsen</div>
           <div class="lead-role">Secretary General</div>
           <p class="lead-bio">Manages the central secretariat, overseeing official correspondence, documentation, institutional communication records, and general administrative coordination.</p>
@@ -445,7 +439,7 @@
       </div>
 
       <div class="lead-card">
-        <div>
+        <img class="lead-photo" src="assets/profiles/wellingtone.jpg" alt="Wellingtone Onyango"><div>
           <div class="lead-name">Wellingtone Onyango</div>
           <div class="lead-role">Executive Secretary</div>
           <p class="lead-bio">Streamlines day-to-day administrative workflows, manages schedules, and facilitates operational communication between executive officers, regional leaders, and stakeholders.</p>
@@ -453,7 +447,7 @@
       </div>
 
       <div class="lead-card">
-        <div>
+        <img class="lead-photo" src="assets/profiles/elisha.jpg" alt="Elisha Owino"><div>
           <div class="lead-name">Elisha Owino</div>
           <div class="lead-role">Director of Finance & Treasury</div>
           <p class="lead-bio">Oversees financial health, budgeting, resource mobilization, and transparent accounting practices for organizational funds and community projects.</p>
@@ -461,8 +455,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:#4C6580;">OS</div>
-        <div>
+        <img class="lead-photo" src="assets/profiles/ohindo-superb.jpg" alt="Ohindo SuperB"><div>
           <div class="lead-name">Ohindo SuperB</div>
           <div class="lead-role">Director of Logistics & Mobilization</div>
           <p class="lead-bio">Coordinates grassroots mobilization, event organization, transport logistics, and field operations for community forums and public drives.</p>
@@ -470,8 +463,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--gold);">EM</div>
-        <div>
+        <img class="lead-photo" src="assets/profiles/emmanuel-msitwa.jpg" alt="Emmanuel Msitwa"><div>
           <div class="lead-name">Emmanuel Msitwa</div>
           <div class="lead-role">Director of ICT, Media & PR</div>
           <p class="lead-bio">Manages technological infrastructure, digital platforms, media presence, online engagement, and public relations campaigns.</p>
@@ -479,8 +471,7 @@
       </div>
 
       <div class="lead-card">
-        <div class="lead-photo-ph" style="background:var(--clay);">BB</div>
-        <div>
+        <img class="lead-photo" src="assets/profiles/billy-billex.jpg" alt="Billy Billex"><div>
           <div class="lead-name">Billy Billex</div>
           <div class="lead-role">Chief Project Coordinator</div>
           <p class="lead-bio">Oversees the design, implementation, monitoring, and evaluation of all organizational projects to ensure they deliver measurable impact.</p>
@@ -488,7 +479,7 @@
       </div>
 
       <div class="lead-card">
-        <div>
+        <img class="lead-photo" src="assets/profiles/aloyce.jpg" alt="Aloyce Mugah"><div>
           <div class="lead-name">Aloyce Mugah</div>
           <div class="lead-role">Director of International & Diaspora Affairs</div>
           <p class="lead-bio">Builds external networks, connects with international partners, and engages the Yimbo diaspora community to channel support and mentorship back home.</p>
