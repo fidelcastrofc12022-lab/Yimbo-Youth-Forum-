@@ -302,16 +302,359 @@
     display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:0.82rem;
   }
   .foot-socials{display:flex; gap:16px;}
+
+/* ---------- mobile refinement ---------- */
+@media (max-width:859px){
+  .nav{
+    padding:12px 16px;
+    min-height:72px;
+  }
+
+  .brand{
+    gap:9px;
+    min-width:0;
+    flex:1;
+  }
+
+  .brand img{
+    width:38px !important;
+    height:38px !important;
+    flex-shrink:0;
+  }
+
+  .brand strong{
+    display:block;
+    font-size:1rem;
+    line-height:1.15;
+    white-space:nowrap;
+  }
+
+  .brand span{
+    display:block;
+    font-size:0.62rem;
+    line-height:1.2;
+    white-space:nowrap;
+  }
+
+  .menutoggle{
+    padding:7px 10px;
+    font-size:1.15rem;
+    line-height:1;
+    flex-shrink:0;
+  }
+
+  .navlinks{
+    padding:10px 16px 18px !important;
+  }
+
+  .navlinks a{
+    font-size:0.92rem;
+  }
+
+  .wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  section{
+    padding:46px 0;
+  }
+
+  .hero{
+    padding:64px 0 48px;
+  }
+
+  .hero h1{
+    font-size:clamp(2rem,9vw,2.75rem);
+    line-height:1.08;
+    margin-bottom:16px;
+  }
+
+  .hero p.lead{
+    font-size:1rem;
+    line-height:1.55;
+    margin-bottom:26px;
+  }
+
+  .hero-ctas{
+    gap:10px;
+    margin-bottom:38px;
+  }
+
+  .hero-ctas .btn{
+    padding:11px 18px;
+    font-size:0.84rem;
+  }
+
+  .stat-strip{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat{
+    margin:0;
+    padding:13px 12px 0 0;
+    border-right:1px solid var(--line-dark);
+    min-height:52px;
+    font-size:0.86rem;
+  }
+
+  .stat:nth-child(2n){
+    border-right:none;
+    padding-left:12px;
+  }
+
+  .sechead{
+    margin-bottom:30px;
+  }
+
+  .sechead h2{
+    font-size:1.65rem;
+    line-height:1.2;
+  }
+
+  .sechead p{
+    font-size:0.96rem;
+    line-height:1.55;
+  }
+
+  .about-grid{
+    gap:30px;
+  }
+
+  .about-lead{
+    padding-left:16px;
+  }
+
+  .about-lead p{
+    font-size:1rem;
+    line-height:1.6;
+  }
+
+  .vmv{
+    gap:20px;
+  }
+
+  .values-row{
+    gap:7px;
+  }
+
+  .value-chip{
+    padding:5px 11px;
+    font-size:0.78rem;
+  }
+
+  .wwd-item{
+    padding:20px 16px 20px 18px;
+  }
+
+  .lead-group-title{
+    margin-bottom:14px;
+  }
+
+  .lead-grid{
+    gap:18px;
+    margin-bottom:34px;
+  }
+
+  .lead-card{
+    gap:12px;
+    padding:12px;
+    border-radius:12px;
+  }
+
+  .lead-photo,
+  .lead-photo-ph{
+    height:205px;
+    border-radius:10px;
+  }
+
+  .lead-name{
+    font-size:1.05rem;
+  }
+
+  .lead-role{
+    font-size:0.86rem;
+    margin-bottom:6px;
+  }
+
+  .lead-bio{
+    font-size:0.86rem;
+    line-height:1.5;
+    margin-bottom:2px;
+  }
+
+  .program-tags{
+    gap:9px;
+  }
+
+  .program-tag{
+    padding:10px 15px;
+    font-size:0.82rem;
+  }
+
+  .program-flow{
+    margin-top:26px;
+    line-height:1.8;
+  }
+
+  .project-visual{
+    min-height:150px;
+    padding:16px;
+  }
+
+  .project-body{
+    padding:22px 18px;
+  }
+
+  .project-body h3{
+    font-size:1.3rem;
+  }
+
+  .project-meta{
+    gap:12px;
+    font-size:0.82rem;
+  }
+
+  .opp-listing{
+    padding:18px;
+    gap:16px;
+  }
+
+  .opp-listing h4{
+    font-size:1rem;
+  }
+
+  .opp-listing .meta{
+    font-size:0.82rem;
+    line-height:1.5;
+  }
+
+  .opp-listing .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .event-feature{
+    gap:0;
+  }
+
+  .date-badge{
+    width:100%;
+    min-width:0;
+    padding:14px 18px;
+  }
+
+  .date-badge .day{
+    font-size:1.7rem;
+    display:inline-block;
+    margin-right:6px;
+  }
+
+  .date-badge .mon{
+    display:inline-block;
+  }
+
+  .event-body{
+    padding:18px;
+    min-width:0;
+  }
+
+  .event-body h3{
+    font-size:1.2rem;
+  }
+
+  .event-body p{
+    font-size:0.9rem;
+  }
+
+  .news-body{
+    padding:22px 18px;
+  }
+
+  .news-body h3{
+    font-size:1.18rem;
+  }
+
+  .engage-grid{
+    gap:9px;
+    margin-bottom:34px;
+  }
+
+  .engage-btn{
+    padding:16px 12px;
+    font-size:0.84rem;
+  }
+
+  .form-panel{
+    padding:22px 16px;
+  }
+
+  .form-grid{
+    gap:15px;
+  }
+
+  .interests .opts{
+    gap:9px 14px;
+  }
+
+  .interests label{
+    font-size:0.82rem;
+  }
+
+  .form-submit .btn{
+    width:100%;
+  }
+
+  .support-grid{
+    gap:30px;
+  }
+
+  footer{
+    padding:46px 0 24px;
+  }
+
+  .foot-grid{
+    gap:30px;
+  }
+
+  .foot-bottom{
+    margin-top:34px;
+    padding-top:18px;
+    flex-direction:column;
+    gap:7px;
+  }
+}
+
+@media (max-width:380px){
+  .brand strong{
+    font-size:0.92rem;
+  }
+
+  .brand span{
+    font-size:0.56rem;
+  }
+
+  .lead-photo,
+  .lead-photo-ph{
+    height:185px;
+  }
+
+  .engage-btn{
+    font-size:0.78rem;
+    padding:14px 9px;
+  }
+}
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="nav">
-    <div class="logo">
-    <span>🇰🇪</span>YIMBO YOUTH FORUM<span>.</span>
-</div>
-
+    <div class="brand">
+      <img src="assets/logo.jpg" alt="Yimbo Youth Forum logo" style="width:44px;height:44px;border-radius:50%;object-fit:cover;">
+      <div>
         <strong>Yimbo Youth Forum</strong>
         <span>Unity • Empowerment • Development</span>
       </div>
@@ -416,7 +759,7 @@
     <div class="lead-grid">
 
       <div class="lead-card">
-        <img class="lead-photo" src="fidel.jpg" alt="Fidel Castro">
+        <img class="lead-photo" src="assets/profiles/fidel.jpg" alt="Fidel Castro"><div>
           <div class="lead-name">Fidel Castro</div>
           <div class="lead-role">Chairperson</div>
           <p class="lead-bio">Provides visionary strategic direction, institutional governance, and high-level representation. Champions programs expanding education, entrepreneurship, and leadership for youth across the region.</p>
